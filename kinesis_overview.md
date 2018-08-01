@@ -29,3 +29,26 @@ Note:
  * Data Aggregation
  * Sentimental Analysis on Social Media Platform
  * etc..
+
+After computation, the data can be sent to :
+* S3
+* RedShift
+* DynamoDB
+* Elastic MapReduce
+
+#### Kinesis - Shard Capacity 
+* Kinesis Streams consist of shards and each shard gives :	
+
+* 5 transactions per second for reads,up to a maximum total data read rate of 2MB per second and up to 1,000 records per 
+second for writes, up to a maximum total data write rate of 1MB per second ( including partition keys).
+
+* The data capcacity of your stream is a function of the number of shards that you specify for the stream.
+* The total capacity of the stream is the sum of the capacities of its shards.
+
+Note: Shard Calculation not required for exam.
+
+* This is all about the architecture of Kinesis Streams
+
+
+
+
